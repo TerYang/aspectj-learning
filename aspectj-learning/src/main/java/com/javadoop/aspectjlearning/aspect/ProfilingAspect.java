@@ -16,7 +16,8 @@ public class ProfilingAspect {
     public Object logProfile(ProceedingJoinPoint joinPoint) throws Throwable {
         long start = System.currentTimeMillis();
         Object result = joinPoint.proceed();
-        System.out.println("[ProfilingAspect]方法: 【" + joinPoint.getSignature() + "】结束，用时: " + (System.currentTimeMillis() - start));
+        System.out.println("[ProfilingAspect]方法: 【" + joinPoint.getSignature() + "】结束，耗时: " +
+                (System.currentTimeMillis() - start)+"ms");
 
         return result;
     }

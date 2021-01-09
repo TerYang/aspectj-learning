@@ -17,7 +17,7 @@ public class Application {
 
 //        testCompileTime();
 //        testPostCompile();
-//        testLoadTime();
+        testLoadTime();
         
     }
 

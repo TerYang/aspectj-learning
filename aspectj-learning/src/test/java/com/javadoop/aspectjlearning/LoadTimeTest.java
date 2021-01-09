@@ -12,7 +12,7 @@ import com.javadoop.aspectjlearning.model.Account;
 public class LoadTimeTest {
 
 
-//    @Test
+    @Test
     public void ltw() {
         Account account = new Account();
         account.pay(100);
